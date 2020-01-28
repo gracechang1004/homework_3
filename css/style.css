@@ -48,9 +48,10 @@ a{
 
 table{
     border: 2px solid black;
+    border-collapse: separate;
+    border-radius: 15px 15px 15px 15px;
     margin-left:auto; 
     margin-right:auto;
-    border-radius: 15px 15px 15px 15px;
 }
 
 .colhead{
@@ -64,24 +65,42 @@ table{
   background-color: #7e0820;
 }
 
-.rowhead{}
+.rowhead{
+  border: 2px;
+  border-color: black;
+}
 
 td{
   padding: 15px;
 }
 
-tr{}
+tr{
+  border: 2px black;
+}
+
+tr:nth-child(even) {background: #D1D1D1;}
+tr:nth-child(odd) {background: transparent;}
+
+tr:hover{
+  background-color: rgba(126,8,32,0.5);
+}
 
 *{}
 
 thead tr:first-child th:first-child{
-	border-top-left-radius: 15px;
-	border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
 }
 
-tbody tr:last-child th:last-child{
-	border-bottom-left-radius: 15px;
-	border-bottom-right-radius: 15px;
+thead tr:first-child th:last-child{
+  border-top-right-radius:15px;
+}
+
+tbody tr:last-child th:first-child{
+  border-bottom-left-radius: 15px;
+}
+
+tbody tr:last-child td:last-child{
+  border-bottom-right-radius: 15px;
 }
 
 footer{
