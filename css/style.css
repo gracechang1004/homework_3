@@ -40,15 +40,29 @@ p{
   padding-top: 10px;
 }
 
-a{}
+a{
+	font-size: 16px;
+	color: #C12258;
+	text-decoration-line: underline;
+	text-decoration-style: wavy;
+}
 
 table{
     border: 2px solid black;
+    margin-left:auto; 
+    margin-right:auto;
+    border-radius: 15px 15px 15px 15px;
 }
 
 .colhead{
   background-color: #7e0820;
   color: white;
+  min-width: 100px;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #7e0820;
 }
 
 .rowhead{}
@@ -61,7 +75,15 @@ tr{}
 
 *{}
 
-thead tr:first-child th:first-child{}
+thead tr:first-child th:first-child{
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+tbody tr:last-child th:last-child{
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
 
 footer{
   position:fixed;
@@ -71,4 +93,5 @@ footer{
   background:black;
   text-align:center;
   color: white;
+  min-height: 60px;
 }
