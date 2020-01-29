@@ -66,15 +66,12 @@ table{
 }
 
 .rowhead{
-  border: 2px black;
+  border-top: 2px solid black;
 }
 
 td{
   padding: 15px;
-}
-
-tr {
-  border: 2px solid black;
+  border-top: 2px solid black;
 }
 
 tr:nth-child(even) {background: #D1D1D1;}
