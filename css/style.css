@@ -81,7 +81,7 @@ tr:hover{
   background-color: rgba(126,8,32,0.5);
 }
 
-tr:focus{
+a:focus{
   border: 2px solid black;
 }
 
